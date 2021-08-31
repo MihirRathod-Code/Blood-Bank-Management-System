@@ -1,0 +1,382 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="Blood_Bank_Management_System.user.user" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+       <title>Home</title>
+<meta charset="UTF-8"> 
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="../www.vitalant.org/Vitalant/media/Global/IDonatedBlood.jpg">
+<meta property="og:image:width" content="1667px">
+<meta property="og:image:height" content="873px">
+<script async="" src="../www.googletagmanager.com/gtm5445.html?id=GTM-KN4QF2W"></script><script async="" src="../connect.facebook.net/en_US/fbevents.js"></script><script async="" src="../www.googletagmanager.com/gtm5445.html?id=GTM-5VZJ7PD"></script><script async="" src="../www.googletagmanager.com/gtm5445.html?id=GTM-KN4QF2W"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/-wV2EAWEOTlEtZh4vNQtn3H1/recaptcha__en.js"></script><script src="../www.google.com/recaptcha/api.js"></script>
+<!-- Google Tag Manager Vitalant Owned May 2020 -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+<link rel="manifest" href="./icon/site.webmanifest">
+<link rel="mask-icon" href="./icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KN4QF2W');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-5VZJ7PD');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VZJ7PD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+    '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '565830497200367');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=565830497200367&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><script async="" src="../i.simpli.fi/dpxd903.js?cid=164173&amp;action=100&amp;segment=entercomvitalantsite&amp;m=1&amp;sifi_tuid=75319"></script>
+<script async="" src="../i.simpli.fi/dpxb9b2.js?cid=164173&amp;conversion=0&amp;campaign_id=0&amp;m=1&amp;c=entercomvitalantsale&amp;sifi_tuid=75319"></script>
+<script async="" src="../i.simpli.fi/dpxb055.js?cid=170959&amp;action=100&amp;segment=entercomvitalantdenversite&amp;m=1&amp;sifi_tuid=76399"></script> 
+<link href="../App_Themes/Default/Images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link href="../App_Themes/Default/Images/favicon.ico" type="image/x-icon" rel="icon">
+<script src="../CMSScripts/Custom/underscore.js" type="text/javascript"></script><script src="../CMSScripts/Custom/jquery-3.0.0.js" type="text/javascript"></script><script src="../CMSScripts/Custom/jquery-ui.js" type="text/javascript"></script><script src="https://connect.facebook.net/signals/config/565830497200367?v=2.9.18&amp;r=stable" async=""></script><script src="../CMSScripts/Custom/bootstrap.js" type="text/javascript"></script><link href="../CMSPages/Bootstrap8020.css?stylesheetname=bootstrap" type="text/css" rel="stylesheet" media="screen">
+<link href="../CMSPages/Main7791.css?stylesheetname=main" type="text/css" rel="stylesheet" media="screen">
+<script src="../CMSScripts/Custom/ContactUs.js" type="text/javascript"></script><script async="" src="../https://tag.simpli.fi/sifitag/d64b4ad0-49ee-0138-f594-06a9ed4ca31b" ?referer="{{Page" url}}=""></script><script async="" src="https://tag.simpli.fi/sifitag/2c5420f0-a884-0136-d7ba-06a9ed4ca31b"></script><!-- Global site tag (gtag.js) - Google Marketing Platform t-3 -->
+<script async="" src="../https://www.googletagmanager.com/gtag/js?id=DC-9989376"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'DC-9989376');
+</script>
+<!-- End of global snippet: Please do not remove -->
+
+<script>
+    gtag('event', 'conversion', {
+        'allow_custom_scripts': true,
+        'send_to': 'DC-9989376/landi0/vital0+standard'
+    });
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=9989376;type=landi0;cat=vital0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" alt=""/>
+</noscript>
+
+</head>
+<body class="LTR Mozilla ENUS ContentBody">
+  <%--  <form id="form1" runat="server">--%>
+    <div>
+        
+     <!-- Google Tag Manager Vitalant Owned May 2020 -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KN4QF2W');</script>
+<!-- End Google Tag Manager -->
+
+   <%-- <form method="post" action="../Home.aspx" id="form">--%>
+<div class="aspNetHidden">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="cafy+Fj9OxK2j72V7TQngwdYyV0zI0r9ljZqFWVpGMT2PgPiKK45N3CDIV1knz13hvh9G7zuCHOPZk/sGG8LtMUoHKcVkEg04cC/NGYpI1Y=">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var theForm = document.forms['form'];
+    if (!theForm) {
+        theForm = document.form;
+    }
+    function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+            theForm.__EVENTTARGET.value = eventTarget;
+            theForm.__EVENTARGUMENT.value = eventArgument;
+            theForm.submit();
+        }
+    }
+    //]]>
+</script>
+
+
+<script src="../WebResourcef9e4.js?d=pynGkmcFUV13He1Qd6_TZCYtn0qL2y8c8RQ4hjnElCXdKKQRM-PJGiiQIN0SA3hmcM9yzON1lUa_bv_i7OFcyw2&amp;t=636776473224055265" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script src="../CMSScripts/WebServiceCall.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am', param); }
+    function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); }; WebForm_DoCallback('m$am', param, callback, ctx, null, true); }
+    //]]>
+</script>
+<script src="../ScriptResource7a46.js?d=NJmAwtEo3Ipnlaxl6CMhvpy38MaBGxshT8Os233m-JqIg_R7FxMe7wFdZySKPH50_e0QfDBiURkAN3QhMQGx9k-w3G9dcpHWJTYiuZMwuU3GIc-ITxgaisZzh5lg5xMIFBHNjoeMjd5Uv66z46yN5D8M5dKj_YATHMyaHdd59oY1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="../ScriptResource1ce8.js?d=dwY9oWetJoJoVpgL6Zq8OAA6-dnEEumSY8qSWmbJDCvHcxK0yuDzfaG6gHivZPsj8ObiM0M_Gv-nx5ubAZhuqZb-6T9auzRsQvssrisVxmR1ozYUD2ksptcnLrq6Ymo2OkMdE-fNgRLu4hfnCT1vo5PGLS9RpebW7RnVGIa3yzo1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="../ScriptResource0dbc.axd?d=eE6V8nDbUVn0gtG6hKNX_A7jPjLuoAnaKr-LDDfykH3eXPlqEAXod_VzBCBvNTnoD8RX9UW_0OpP1TUpyagBPHAr1MXGMDRtCXz7-wn0CT68YuLDScwxUg5ZvmP9fEga0&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource9f1c.axd?d=mcAASOSteirJeuV-3by3UX1abur26BydYiIuHrh8J1U4pUkklrBy-HzU_XMihpDHRj3Ne7RZibRWgH2Q278NXqM9RBkGkxSUS3DbhIKqE5g1&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource434e.axd?d=jwf4VSQi7LeShc44FJ-gAZHNbzk_lcAxs1CAWwtOHRMF1KFD6MrjIZajs-nzbL3ZnFiwS2MlftwCMqvApSlfeBl4YzL4x9Uxxb7Hvmz-Q1Sgacu9xkHmzY3zzYrFb8DU0&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource8255.axd?d=HEFpVKbnoeQjkjHkFKu3MD3EAu4KrZWedVA1oUV1ZKrlnZipWmPaEtAgFoW91bOOchjewy1Pv6Xc7dGMxm6BdeRQWUFga36ECfkk3lLIgE27HI-Y7jb-DWt6ypZvhxqX0&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcefcdb.axd?d=V9BZfzKzDCsxAStwHbjCaPRegjfX0pRv50YenpTH3_32J-wjKwtbd0k2zsQ3zD5BJVKXx6b47p579gEhT5A2IEXF9fktV79j1u3JybkWh5oky5vIxkQw33B3p-vs1_Hc0&amp;t=27679117" type="text/javascript"></script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    var CMS = CMS || {};
+    CMS.Application = {
+        "language": "en",
+        "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+        "isDebuggingEnabled": true,
+        "applicationUrl": "/",
+        "isDialog": false,
+        "isRTL": "false"
+    };
+
+    //]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM', '', 'tp$lt$ctl08$ZipCodeForm$viewBiz$pM$pMP', ''], [], [], 90, '');
+        //]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    
+<div class="container-fluid">
+  <header>   
+    <!---->
+     <div class="row align-items-end full-header">
+              <div class="col-xl-3" style="float: left;">
+                <!--<a href="/Home.aspx"><img class="img-fluid" src="/getmedia/45fa83be-2c5a-4f08-8918-19f48df11dc9/logo320.aspx" /></a> -->
+                  <div id="randomPageWebPart"><a href="../user/UserHome.aspx">
+                      <%--<img src="../Vitalant/media/Global/vitalant_color_logo_cb09f.png?ext=.png" style="max-width: 320px;" alt="Vitalant logo">--%>
+
+                                              </a> 
+</div>          
+              </div>           
+              <div id="headerCenterCol" class="col-xl-6">
+                
+<ul class="nav">
+    <li>
+        <a href="UserHome.aspx">Home</a>
+    </li>
+    <li>
+        <a href="Donor.aspx">Donate</a>
+    </li>
+    <li>
+  <a href="ContactUs.aspx">Contact Us</a>
+</li>
+    <li>
+    <a href="FeedBack.aspx">FeedBack</a>
+</li>
+    <li>
+    <a href="AboutUs.aspx">About Us</a>
+</li>
+    </ul>
+            
+              </div>
+              
+              <%--<div id="headerRightCol" class="col-xl-3" style="float: right;">
+                <a href="../Special-Pages/Search-Result.html"><img alt="Search" src="../Vitalant/media/Global/search-icon.png" width="17" height="17"></a>&nbsp;&nbsp;|&nbsp;
+<span class="purpleHeader">
+    <a data-target=" #exampleModal" data-toggle="modal" href="#" class="purpleHeader2"> YOUR LOCATION</a>
+</span>
+&nbsp;|&nbsp;&nbsp;&nbsp;<a href="user_Login.aspx"> <button id="zipModal" class="btn" type="button" data-toggle="modal" onclick="../user/user_Login.aspx">
+   Log In
+</button></a>
+              </div>--%>
+      </div>
+    
+  </header>
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+
+
+  
+  
+  <div id="footer">
+    
+  </div>
+</div>
+
+<footer>
+<div class="row">
+<div class="col-xl-3 col-lg-3 pb-3"><%--<img src="../Vitalant/media/Global/vtl_h_c_rev_wht_rgb_180518-cropped.png" style="max-width: 160px;padding-bottom: 15px;">--%><br>
+<a href="../https://www.facebook.com/Vitalant/" target="_blank"><%--<img src="../getmedia/ea33893f-6892-41bf-bf4a-dd097f9eabe1/facebook46.png" style="width: 30px;"></a>&nbsp;&nbsp; <a href="https://www.instagram.com/vitalantorg/" target="_blank"><img src="../getmedia/8e7bca80-c6cb-4e45-b81b-4b03d43228c7/insta46.png" style="width: 30px;"></a>&nbsp;&nbsp; <a href="https://twitter.com/VitalantOrg" target="_blank"><img src="../getmedia/26f246e0-c995-4523-862a-c9bdbdc58504/twitter46.png" style="width: 30px;">--%></a>
+<p style="color: white;"><br>
+877-25-VITAL</p>
+</div>
+
+<div class="col-xl-3 col-lg-3">
+<p style="color: white;"><strong>Our Organization</strong><br>
+<a class="dark">Leadership</a><br>
+<a class="dark" >History</a><br>
+<a class="dark" >Careers</a><br>
+<a class="dark" >Locations &amp; Hours</a></p>
+</div>
+
+<div class="col-xl-3 col-lg-3">
+<p style="color: white;"><strong>Resources</strong><br>
+<a class="dark" >FAQs</a><br>
+<a class="dark" >Donor&nbsp;Forms</a><br>
+<a class="dark" >Health History Questionnaire</a><br>
+<a class="dark" >Contact Us</a><br>
+<a class="dark" >Rewards</a></p>
+</div>
+
+<div class="col-xl-3 col-lg-3">
+<p style="color: white;">Blood Bank Management System, one of the nation’s oldest and largest nonprofit community blood service providers, supplies comprehensive transfusion medicine services to nearly 1,000 hospitals and health care partners for patients in need across many countries near future.</p>
+<!---
+<button class="btn" style="background-color:#a25eb5;" type="button">Sign Up</button>---></div>
+</div>
+
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 pt-5">
+<p style="text-align: center; color: white; font-size: 0.8em;">© 2020 Blood Bank Management System. All Rights Reserved.&nbsp;&nbsp;<a class="dark" href="AboutUs.aspx">About Us</a>&nbsp;&nbsp;<a class="dark" >Terms of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 pt-5" style="float: right;"><a class="dark" href="../Disaster-Recovery.html" style="color: rgb(114, 34, 130);">Disaster Recovery</a></div>
+</div>
+</footer>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body"><h5>Please enter your zip code so that we may present the most relevant content based on your location.<br><br>After clicking submit, navigate through the site&nbsp;or click the Log In or Donate buttons to access&nbsp;your local donation scheduling site.<br><br></h5> 
+            
+           
+  <div id="p_lt_ctl08_ZipCodeForm_viewBiz">
+	<div id="p_lt_ctl08_ZipCodeForm_viewBiz_pM_pMP">
+
+	</div><div id="p_lt_ctl08_ZipCodeForm_viewBiz_pnlForm" class="FormPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'p_lt_ctl08_ZipCodeForm_viewBiz_btnOK')">
+		<label id="p_lt_ctl08_ZipCodeForm_viewBiz_ZipCode_lb" class="EditingFormLabel" for="p_lt_ctl08_ZipCodeForm_viewBiz_ZipCode_txtText">Zip Code</label><br>
+<div id="p_lt_ctl08_ZipCodeForm_viewBiz_ncpzipcode" class="EditingFormControlNestedControl editing-form-control-nested-control">
+			<input name="p$lt$ctl08$ZipCodeForm$viewBiz$ZipCode$txtText" type="text" maxlength="5" id="p_lt_ctl08_ZipCodeForm_viewBiz_ZipCode_txtText" class="form-control">
+
+		</div><br>
+<input type="submit" name="p$lt$ctl08$ZipCodeForm$viewBiz$btnOK" value="Submit" id="p_lt_ctl08_ZipCodeForm_viewBiz_btnOK" class="FormButton btn btn-primary">
+	</div>
+</div></div>
+    
+          <div class="modal-footer"><p style="font-size: 10px;margin-bottom:0;">We and our partners use cookies on this site to improve our service, perform analytics, personalize advertising, measure advertising performance and remember website preferences. By using this site, you consent to these cookies. For more information about cookies, please see our <a href="../Privacy-Policy.html">Privacy Policy.</a></p></div>
+        </div>
+    </div>
+    </div><%--</form>--%>
+
+<div id="postSubmit" style="display: none;"></div>
+<div id="postSubmitGoodZip" style="display: none;"></div>
+<div id="postSubmitLStreamZip" style="display: none;"></div>
+
+<button id="postSubmitButton" class="btn" data-target="#postSubmitModal" type="button" data-toggle="modal" style="display: none;">
+    Open Post Submit Modal
+</button>
+
+
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="postSubmitModal" role="dialog" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">  </div>
+          <div class="modal-footer" style="font-size: 10px;">We and our partners use cookies on this site to improve our service, perform analytics, personalize advertising, measure advertising performance and remember website preferences. By using this site, you consent to these cookies. For more information about cookies, please see our Privacy Policy.</div>
+         </div>
+        </div>
+   </div>
+    
+    
+
+<script type="text/javascript">
+    //<![CDATA[
+    WebServiceCall('/cmsapi/webanalytics', 'LogHit', '{"NodeAliasPath":"/Home","DocumentCultureCode":"en-US","UrlReferrer":""}')
+    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    var callBackFrameUrl = 'WebResourcedebd.html?d=beToSAE3vdsL1QUQUxjWdSpxP_y3R1O21KYmwxz-91CzT0JG9yPvptyme_004MsziPfCltkCkpbBkoQorqu01Q2&amp;t=636776473224055265';
+    WebForm_InitCallback();
+    theForm.oldSubmit = theForm.submit;
+    theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+    theForm.oldOnSubmit = theForm.onsubmit;
+    theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+    Sys.Application.add_init(function () {
+        $create(Sys.Extended.UI.FilteredTextBoxBehavior, { "filterType": 2, "id": "p_lt_ctl08_ZipCodeForm_viewBiz_ZipCode_exFilter" }, null, null, $get("p_lt_ctl08_ZipCodeForm_viewBiz_ZipCode_txtText"));
+    });
+    //]]>
+</script>
+
+
+
+<!-- Mirrored from vitalant.org/Home.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2020 00:13:57 GMT -->
+
+<script src="https://i.simpli.fi/p?cid=&amp;cb=sifi_att_36407613._hp"></script>
+    </div>
+        <div>
+        
+    </div>
+<%--   </form> --%>
+</body>
+</html>

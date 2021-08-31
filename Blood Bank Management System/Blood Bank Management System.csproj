@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A45C5F00-9846-4478-A910-DB361ADBDE0E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blood_Bank_Management_System</RootNamespace>
+    <AssemblyName>Blood Bank Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Admin_Home.aspx" />
+    <Content Include="admin\Blood_List.aspx" />
+    <Content Include="admin\Admin_Login.aspx" />
+    <Content Include="admin\main\apple-touch-icon.html" />
+    <Content Include="admin\main\assets\css\bootstrap.min.css" />
+    <Content Include="admin\main\assets\css\calendar\calendar.css" />
+    <Content Include="admin\main\assets\css\calendar\fullcalendar.min.css" />
+    <Content Include="admin\main\assets\css\chart\c3.min.css" />
+    <Content Include="admin\main\assets\css\chart\chart.css" />
+    <Content Include="admin\main\assets\css\chart\chartist.min.css" />
+    <Content Include="admin\main\assets\css\chart\morris.css" />
+    <Content Include="admin\main\assets\css\countrySelect.min.css" />
+    <Content Include="admin\main\assets\css\e-commerce\e-commerce.css" />
+    <Content Include="admin\main\assets\css\flags.png" />
+    <Content Include="admin\main\assets\css\font-awesome.min.css" />
+    <Content Include="admin\main\assets\css\forms\chosen-sprite%402x.png" />
+    <Content Include="admin\main\assets\css\forms\chosen-sprite.png" />
+    <Content Include="admin\main\assets\css\forms\chosen.min.css" />
+    <Content Include="admin\main\assets\css\forms\forms.css" />
+    <Content Include="admin\main\assets\css\icon-weather.css" />
+    <Content Include="admin\main\assets\css\index-01.css" />
+    <Content Include="admin\main\assets\css\index-02.css" />
+    <Content Include="admin\main\assets\css\ionicons.min.css" />
+    <Content Include="admin\main\assets\css\linea-basic.css" />
+    <Content Include="admin\main\assets\css\mail\blue%402x.png" />
+    <Content Include="admin\main\assets\css\mail\blue.png" />
+    <Content Include="admin\main\assets\css\mail\bootstrap3-wysihtml5.min.css" />
+    <Content Include="admin\main\assets\css\mail\mail.css" />
+    <Content Include="admin\main\assets\css\owl.carousel.min.css" />
+    <Content Include="admin\main\assets\css\owl.video.play.html" />
+    <Content Include="admin\main\assets\css\pages\blog.css" />
+    <Content Include="admin\main\assets\css\pages\pages.css" />
+    <Content Include="admin\main\assets\css\pe-icon-7-stroke.css" />
+    <Content Include="admin\main\assets\css\perfect-scrollbar.css" />
+    <Content Include="admin\main\assets\css\presets.css" />
+    <Content Include="admin\main\assets\css\responsive.css" />
+    <Content Include="admin\main\assets\css\simple-line-icons.css" />
+    <Content Include="admin\main\assets\css\style.css" />
+    <Content Include="admin\main\assets\css\tables\dataTables.bootstrap4.css" />
+    <Content Include="admin\main\assets\css\tables\tables.css" />
+    <Content Include="admin\main\assets\css\ui\alerts.css" />
+    <Content Include="admin\main\assets\css\ui\buttons.css" />
+    <Content Include="admin\main\assets\css\ui\card.css" />
+    <Content Include="admin\main\assets\css\ui\dropdown.css" />
+    <Content Include="admin\main\assets\css\ui\modals.css" />
+    <Content Include="admin\main\assets\css\ui\progress-bars.css" />
+    <Content Include="admin\main\assets\css\ui\ribbons.css" />
+    <Content Include="admin\main\assets\css\ui\sliders.css" />
+    <Content Include="admin\main\assets\css\ui\tab.css" />
+    <Content Include="admin\main\assets\css\widget\blog.html" />
+    <Content Include="admin\main\assets\css\widget\jquery-jvectormap.css" />
+    <Content Include="admin\main\assets\css\widget\magnific-popup.css" />
+    <Content Include="admin\main\assets\css\widget\widgets.css" />
+    <Content Include="admin\main\assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="admin\main\assets\fonts\ionicons790f.svg" />
+    <Content Include="admin\main\assets\fonts\linea-basic-10.svg" />
+    <Content Include="admin\main\assets\fonts\linea-weather-10.svg" />
+    <Content Include="admin\main\assets\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="admin\main\assets\fonts\Simple-Line-Iconsb26c.svg" />
+    <Content Include="admin\main\assets\js\calendar\fullcalendar.min.js" />
+    <Content Include="admin\main\assets\js\calendar\moment.js" />
+    <Content Include="admin\main\assets\js\charts\c3\c3.chart.init.js" />
+    <Content Include="admin\main\assets\js\charts\c3\c3.min.js" />
+    <Content Include="admin\main\assets\js\charts\c3\d3.min.js" />
+    <Content Include="admin\main\assets\js\charts\chartist\chartist-plugin-legend.js" />
+    <Content Include="admin\main\assets\js\charts\chartist\chartist.init.js" />
+    <Content Include="admin\main\assets\js\charts\chartist\chartist.min.js" />
+    <Content Include="admin\main\assets\js\charts\chartjs\chart.js" />
+    <Content Include="admin\main\assets\js\charts\chartjs\Chart.min.js" />
+    <Content Include="admin\main\assets\js\charts\flot\flot.chart.init.js" />
+    <Content Include="admin\main\assets\js\charts\flot\jquery.flot.js" />
+    <Content Include="admin\main\assets\js\charts\flot\jquery.flot.pie.js" />
+    <Content Include="admin\main\assets\js\charts\flot\jquery.flot.resize.js" />
+    <Content Include="admin\main\assets\js\charts\flot\jquery.flot.spline.js" />
+    <Content Include="admin\main\assets\js\charts\gauge\gage.chart.init.js" />
+    <Content Include="admin\main\assets\js\charts\gauge\gauge.min.js" />
+    <Content Include="admin\main\assets\js\charts\gauge\raphael-2.1.4.min.js" />
+    <Content Include="admin\main\assets\js\charts\google\google.chart.init.js" />
+    <Content Include="admin\main\assets\js\charts\morris\morris.init.js" />
+    <Content Include="admin\main\assets\js\charts\morris\morris.js" />
+    <Content Include="admin\main\assets\js\charts\morris\raphael-min.js" />
+    <Content Include="admin\main\assets\js\charts\rickshaw\d3.js" />
+    <Content Include="admin\main\assets\js\charts\rickshaw\ResizeSensor.js" />
+    <Content Include="admin\main\assets\js\charts\rickshaw\rickshaw.init.js" />
+    <Content Include="admin\main\assets\js\charts\rickshaw\rickshaw.min.js" />
+    <Content Include="admin\main\assets\js\charts\sparkline\jquery.sparkline.min.js" />
+    <Content Include="admin\main\assets\js\charts\sparkline\sparkline.chart.init.js" />
+    <Content Include="admin\main\assets\js\forms\chosen.jquery.min.js" />
+    <Content Include="admin\main\assets\js\forms\forms.js" />
+    <Content Include="admin\main\assets\js\index\index-01.js" />
+    <Content Include="admin\main\assets\js\jquery-3.2.1.slim.min.js" />
+    <Content Include="admin\main\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="admin\main\assets\js\mail\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="admin\main\assets\js\mail\icheck.js" />
+    <Content Include="admin\main\assets\js\mail\mailbox.js" />
+    <Content Include="admin\main\assets\js\main.js" />
+    <Content Include="admin\main\assets\js\owl.carousel.min.js" />
+    <Content Include="admin\main\assets\js\plugins.js" />
+    <Content Include="admin\main\assets\js\tables\dataTables.bootstrap4.js" />
+    <Content Include="admin\main\assets\js\tables\dataTables.bootstrap4.min.js" />
+    <Content Include="admin\main\assets\js\tables\jquery.dataTables.js" />
+    <Content Include="admin\main\assets\js\tables\jquery.dataTables.min.js" />
+    <Content Include="admin\main\assets\js\tables\mindmup-editabletable.js" />
+    <Content Include="admin\main\assets\js\tables\numeric-input-example.js" />
+    <Content Include="admin\main\assets\js\tables\tables.js" />
+    <Content Include="admin\main\assets\js\widgets\charts.init.js" />
+    <Content Include="admin\main\assets\js\widgets\gauge.js" />
+    <Content Include="admin\main\assets\js\widgets\jquery.knob.min.js" />
+    <Content Include="admin\main\assets\js\widgets\jvectormap.bundle.js" />
+    <Content Include="admin\main\assets\js\widgets\knob.init.js" />
+    <Content Include="admin\main\assets\js\widgets\static.js" />
+    <Content Include="admin\main\assets\js\widgets\weather.js" />
+    <Content Include="admin\main\assets\js\widgets\widgets.js" />
+    <Content Include="admin\main\calendar.html" />
+    <Content Include="admin\main\change-log.html" />
+    <Content Include="admin\main\charts\apple-touch-icon.html" />
+    <Content Include="admin\main\charts\c3.html" />
+    <Content Include="admin\main\charts\chartist.html" />
+    <Content Include="admin\main\charts\chartjs.html" />
+    <Content Include="admin\main\charts\flot-chart.html" />
+    <Content Include="admin\main\charts\google-charts.html" />
+    <Content Include="admin\main\charts\justGage.html" />
+    <Content Include="admin\main\charts\morris.html" />
+    <Content Include="admin\main\charts\rickshaw.html" />
+    <Content Include="admin\main\charts\sparkline.html" />
+    <Content Include="admin\main\data.html" />
+    <Content Include="admin\main\e-commerce\apple-touch-icon.html" />
+    <Content Include="admin\main\e-commerce\invoice.html" />
+    <Content Include="admin\main\e-commerce\order.html" />
+    <Content Include="admin\main\e-commerce\pricing.html" />
+    <Content Include="admin\main\editable-tables.html" />
+    <Content Include="admin\main\Error_Page.aspx" />
+    <Content Include="admin\main\forms\advanced.html" />
+    <Content Include="admin\main\forms\apple-touch-icon.html" />
+    <Content Include="admin\main\forms\basic.html" />
+    <Content Include="admin\main\forms\data.html" />
+    <Content Include="admin\main\forms\editable-tables.html" />
+    <Content Include="admin\main\forms\icons.html" />
+    <Content Include="admin\main\forms\simple.html" />
+    <Content Include="admin\main\forms\table-color.html" />
+    <Content Include="admin\main\forms\wizard.html" />
+    <Content Include="admin\main\icons.html" />
+    <Content Include="admin\main\icons\apple-touch-icon.html" />
+    <Content Include="admin\main\icons\calendar.html" />
+    <Content Include="admin\main\icons\change-log.html" />
+    <Content Include="admin\main\icons\fontawesome.html" />
+    <Content Include="admin\main\icons\index.html" />
+    <Content Include="admin\main\icons\linea.html" />
+    <Content Include="admin\main\icons\simple.html" />
+    <Content Include="admin\main\icons\stroke.html" />
+    <Content Include="admin\main\icons\weather.html" />
+    <Content Include="admin\main\images\admin.jpg" />
+    <Content Include="admin\main\images\avatar\1.jpg" />
+    <Content Include="admin\main\images\avatar\11.jpg" />
+    <Content Include="admin\main\images\avatar\12.jpg" />
+    <Content Include="admin\main\images\avatar\2.jpg" />
+    <Content Include="admin\main\images\avatar\3.jpg" />
+    <Content Include="admin\main\images\avatar\4.jpg" />
+    <Content Include="admin\main\images\avatar\5.jpg" />
+    <Content Include="admin\main\images\avatar\6.jpg" />
+    <Content Include="admin\main\images\avatar\7.jpg" />
+    <Content Include="admin\main\images\avatar\8.jpg" />
+    <Content Include="admin\main\images\avatar\9.jpg" />
+    <Content Include="admin\main\images\bg1.jpg" />
+    <Content Include="admin\main\images\bg2.jpg" />
+    <Content Include="admin\main\images\bg5.jpg" />
+    <Content Include="admin\main\images\bg6.jpg" />
+    <Content Include="admin\main\images\blog\1.jpg" />
+    <Content Include="admin\main\images\blog\2.jpg" />
+    <Content Include="admin\main\images\blog\3.jpg" />
+    <Content Include="admin\main\images\blog\4.jpg" />
+    <Content Include="admin\main\images\blog\5.jpg" />
+    <Content Include="admin\main\images\blog\6.jpg" />
+    <Content Include="admin\main\images\blue.png" />
+    <Content Include="admin\main\images\logo.png" />
+    <Content Include="admin\main\images\logo2.png" />
+    <Content Include="admin\main\images\modal.png" />
+    <Content Include="admin\main\images\placeholder.png" />
+    <Content Include="admin\main\images\slider\1.jpg" />
+    <Content Include="admin\main\images\slider\2.jpg" />
+    <Content Include="admin\main\images\slider\3.jpg" />
+    <Content Include="admin\main\images\slider\7.jpg" />
+    <Content Include="admin\main\images\slider\8.jpg" />
+    <Content Include="admin\main\images\slider\9.jpg" />
+    <Content Include="admin\main\images\slider\f1.jpg" />
+    <Content Include="admin\main\images\slider\f2.jpg" />
+    <Content Include="admin\main\images\slider\f3.jpg" />
+    <Content Include="admin\main\images\userimage.png" />
+    <Content Include="admin\main\images\we.jpg" />
+    <Content Include="admin\main\images\weather\1.jpg" />
+    <Content Include="admin\main\images\weather\2.jpg" />
+    <Content Include="admin\main\images\weather\3.jpg" />
+    <Content Include="admin\main\images\weather\4.jpg" />
+    <Content Include="admin\main\index-02.html" />
+    <Content Include="admin\main\index.html" />
+    <Content Include="admin\main\layout\advanced.html" />
+    <Content Include="admin\main\layout\apple-touch-icon.html" />
+    <Content Include="admin\main\layout\basic.html" />
+    <Content Include="admin\main\layout\boxed.html" />
+    <Content Include="admin\main\layout\fixed.html" />
+    <Content Include="admin\main\layout\sidebar.html" />
+    <Content Include="admin\main\layout\single.html" />
+    <Content Include="admin\main\layout\wizard.html" />
+    <Content Include="admin\main\mail\apple-touch-icon.html" />
+    <Content Include="admin\main\mail\compose.html" />
+    <Content Include="admin\main\mail\inbox.html" />
+    <Content Include="admin\main\mail\read-mail.html" />
+    <Content Include="admin\main\mail\read.html" />
+    <Content Include="admin\main\pages\404.html" />
+    <Content Include="admin\main\pages\500.html" />
+    <Content Include="admin\main\pages\apple-touch-icon.html" />
+    <Content Include="admin\main\pages\blog.html" />
+    <Content Include="admin\main\pages\log-in.html" />
+    <Content Include="admin\main\pages\register.html" />
+    <Content Include="admin\main\pages\single.html" />
+    <Content Include="admin\main\simple.html" />
+    <Content Include="admin\main\table-color.html" />
+    <Content Include="admin\main\tables\apple-touch-icon.html" />
+    <Content Include="admin\main\tables\data.html" />
+    <Content Include="admin\main\tables\editable-tables.html" />
+    <Content Include="admin\main\tables\simple.html" />
+    <Content Include="admin\main\tables\table-color.html" />
+    <Content Include="admin\main\ui\alerts.html" />
+    <Content Include="admin\main\ui\apple-touch-icon.html" />
+    <Content Include="admin\main\ui\badges.html" />
+    <Content Include="admin\main\ui\buttons.html" />
+    <Content Include="admin\main\ui\cards.html" />
+    <Content Include="admin\main\ui\dropdown.html" />
+    <Content Include="admin\main\ui\index.html" />
+    <Content Include="admin\main\ui\list.html" />
+    <Content Include="admin\main\ui\modals.html" />
+    <Content Include="admin\main\ui\progress-bars.html" />
+    <Content Include="admin\main\ui\ribbons.html" />
+    <Content Include="admin\main\ui\sliders.html" />
+    <Content Include="admin\main\ui\tab.html" />
+    <Content Include="admin\main\widgets\apple-touch-icon.html" />
+    <Content Include="admin\main\widgets\chart.html" />
+    <Content Include="admin\main\widgets\social.html" />
+    <Content Include="admin\main\widgets\statistic.html" />
+    <Content Include="admin\main\widgets\weather.html" />
+    <Content Include="admin\User_List.aspx" />
+    <Content Include="admin\WebForm1.aspx" />
+    <Content Include="admin\AddCamp.aspx" />
+    <Content Include="admin\Add_Donor.aspx" />
+    <Content Include="admin\Expire_Blood.aspx" />
+    <Content Include="admin\Del_Blood.aspx" />
+    <Content Include="admin\Admin_Logout.aspx" />
+    <Content Include="admin\white.png" />
+    <Content Include="App_Data\BloodDatabase.mdf" />
+    <Content Include="App_Data\BloodDatabase_log.ldf">
+      <DependentUpon>BloodDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Blood.png" />
+    <Content Include="logo.png" />
+    <Content Include="logo2.jpg" />
+    <Content Include="logo3.png" />
+    <Content Include="logo4.png" />
+    <Content Include="user\AboutUs.aspx" />
+    <Content Include="App_Themes\Az-vfl\az-vfl.css" />
+    <Content Include="App_Themes\Default\Images\favicon.ico" />
+    <Content Include="bldBank.png" />
+    <Content Include="CMSPages\Bootstrap8020.css" />
+    <Content Include="CMSPages\config979c.js" />
+    <Content Include="CMSPages\Main7791.css" />
+    <Content Include="CMSScripts\cms.js" />
+    <Content Include="CMSScripts\Custom\bootstrap.js" />
+    <Content Include="CMSScripts\Custom\ContactUs.js" />
+    <Content Include="CMSScripts\Custom\jquery-3.0.0.js" />
+    <Content Include="CMSScripts\Custom\jquery-ui.js" />
+    <Content Include="CMSScripts\Custom\script.js" />
+    <Content Include="CMSScripts\Custom\underscore.js" />
+    <Content Include="CMSScripts\jquery\jquery-cmscompatibility.js" />
+    <Content Include="CMSScripts\jquery\jquery-core.js" />
+    <Content Include="CMSScripts\jquery\jquery-docwrite.js" />
+    <Content Include="CMSScripts\RequireJS\CMSConfigRequire.js" />
+    <Content Include="CMSScripts\RequireJS\require.js" />
+    <Content Include="CMSScripts\WebServiceCall.js" />
+    <Content Include="CMSWebParts\Maps\Basic\BasicGoogleMaps_files\GoogleMaps.js" />
+    <Content Include="Everance\media\Engage\vertical-flourish%403x.png" />
+    <Content Include="Everance\media\HomePage\wave-line%403x.png" />
+    <Content Include="Everance\media\leadership\leadership-Bassett.jpg" />
+    <Content Include="Everance\media\leadership\leadership-Green.jpg" />
+    <Content Include="Everance\media\leadership\leadership-Perry.jpg" />
+    <Content Include="Everance\media\leadership\leadership-Shah.jpg" />
+    <Content Include="getattachment\Articles\New-28-day-Deferral-In-Response-to-Novel-Coronavir\coronacb5d.png" />
+    <Content Include="getattachment\Articles\VITALANT-RESEARCH-INSTITUTE-SUPPORTING-ILL-COVID-1\stroke875e.png" />
+    <Content Include="getattachment\Articles\Winter-weather-urgent-need-Feb-2019\facebook-winter1e6c.jpg" />
+    <Content Include="getattachment\Articles\Winter-weather-urgent-need-Feb-2019\facebook-winter838d.jpg" />
+    <Content Include="user\UserHome.aspx" />
+    <Content Include="user\Donor.aspx" />
+    <Content Include="user\ContactUS.aspx" />
+    <Content Include="user\FeedBack.aspx" />
+    <Content Include="Vitalant\media\Awe\awe-icon-only.png" />
+    <Content Include="Vitalant\media\Awe\awemakers.png" />
+    <Content Include="Vitalant\media\Awe\Coast-to-Coast.png" />
+    <Content Include="Vitalant\media\Awe\every-day-awesome.png" />
+    <Content Include="Vitalant\media\Awe\go-forth.png" />
+    <Content Include="Vitalant\media\Awe\share-your-story.png" />
+    <Content Include="Vitalant\media\Awe\transform-a-life-and-your-own.png" />
+    <Content Include="Vitalant\media\Awe\Transform-Lives.png" />
+    <Content Include="Vitalant\media\Donate\vtl-donationprocess-web-09.png" />
+    <Content Include="Vitalant\media\Engage\vertical-flourish.png" />
+    <Content Include="Vitalant\media\Events\Arizona\Skateboard-Youth-Events-160x140_151fb.jpg" />
+    <Content Include="Vitalant\media\Events\color-block-Eventb09f.png" />
+    <Content Include="Vitalant\media\Global\search-icon.png" />
+    <Content Include="Vitalant\media\Global\visa_mc_discover.png" />
+    <Content Include="Vitalant\media\Global\vitalant_color_logo_ab09f.png" />
+    <Content Include="Vitalant\media\Global\vitalant_color_logo_cb09f.png" />
+    <Content Include="Vitalant\media\Global\vtl_h_c_rev_wht_rgb_180518-cropped.png" />
+    <Content Include="Vitalant\media\HomePage\COVID-19_banner_1_bkg.png" />
+    <Content Include="Vitalant\media\HomePage\VitalantCOVID19_PSA_120.mp4" />
+    <Content Include="Vitalant\media\HomePage\vitalant_color_logo_bb09f.png" />
+    <Content Include="Vitalant\media\Images\SSL-Secure-Connection.png" />
+    <Content Include="Vitalant\media\leadership\leadership-Bobos.jpg" />
+    <Content Include="Vitalant\media\leadership\leadership-Busch.jpg" />
+    <Content Include="Vitalant\media\leadership\leadership-Johnson.jpg" />
+    <Content Include="Vitalant\media\leadership\leadership-Michaelson.jpg" />
+    <Content Include="Vitalant\media\leadership\leadership-pushor.png" />
+    <Content Include="Vitalant\media\leadership\leadership-Vassallo.jpg" />
+    <Content Include="Vitalant\media\Learn\PatientsUsageofPlatelets_piechart.png" />
+    <Content Include="Vitalant\media\Learn\PatientsUsageofRBCs_piechart.png" />
+    <Content Include="Vitalant\media\Learn\Plasma80px.png" />
+    <Content Include="Vitalant\media\Learn\Platelets80px.png" />
+    <Content Include="Vitalant\media\Learn\Redbloodcellls80px.png" />
+    <Content Include="Vitalant\media\Learn\WhiteBloodcells-80px.png" />
+    <Content Include="Vitalant\media\News\VitalantCOVID19_PSA_30.mp4" />
+    <Content Include="Vitalant\media\News\_ROB2245_web51fb.jpg" />
+    <Content Include="Vitalant\media\Photos\GettyImages-62876252451fb.jpg" />
+    <Content Include="Vitalant\media\Testimonials\aa-male-youth.png" />
+    <Content Include="Vitalant\media\Testimonials\angel-siner-headshot.png" />
+    <Content Include="Vitalant\media\Testimonials\asian-male-adult.png" />
+    <Content Include="Vitalant\media\Testimonials\brian-headshot.png" />
+    <Content Include="Vitalant\media\Testimonials\jaziel-17-vfl-headshot-land.png" />
+    <Content Include="Vitalant\media\Testimonials\kristin-belmonte-family.png" />
+    <Content Include="Vitalant\media\Testimonials\lauryn-02.png" />
+    <Content Include="Vitalant\media\Testimonials\oliver-headshot.png" />
+    <Content Include="Vitalant\media\Testimonials\steven-lee-headshot.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Admin_Home.aspx.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Home.aspx.designer.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin_Master.Master.cs">
+      <DependentUpon>Admin_Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Master.Master.designer.cs">
+      <DependentUpon>Admin_Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Blood_List.aspx.cs">
+      <DependentUpon>Blood_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Blood_List.aspx.designer.cs">
+      <DependentUpon>Blood_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\main\Error_Page.aspx.cs">
+      <DependentUpon>Error_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\main\Error_Page.aspx.designer.cs">
+      <DependentUpon>Error_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\User_List.aspx.cs">
+      <DependentUpon>User_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\User_List.aspx.designer.cs">
+      <DependentUpon>User_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AddCamp.aspx.cs">
+      <DependentUpon>AddCamp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddCamp.aspx.designer.cs">
+      <DependentUpon>AddCamp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Add_Donor.aspx.cs">
+      <DependentUpon>Add_Donor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Add_Donor.aspx.designer.cs">
+      <DependentUpon>Add_Donor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Expire_Blood.aspx.cs">
+      <DependentUpon>Expire_Blood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Expire_Blood.aspx.designer.cs">
+      <DependentUpon>Expire_Blood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Del_Blood.aspx.cs">
+      <DependentUpon>Del_Blood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Del_Blood.aspx.designer.cs">
+      <DependentUpon>Del_Blood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin_Logout.aspx.cs">
+      <DependentUpon>Admin_Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Logout.aspx.designer.cs">
+      <DependentUpon>Admin_Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\Donor.aspx.cs">
+      <DependentUpon>Donor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\Donor.aspx.designer.cs">
+      <DependentUpon>Donor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\ContactUS.aspx.cs">
+      <DependentUpon>ContactUS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\ContactUS.aspx.designer.cs">
+      <DependentUpon>ContactUS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="getattachment\Donate\Blood-Donation\Donor-Eligibility\BS_3514cda.pdf" />
+    <Content Include="getattachment\Donate\Blood-Donation\Donor-Eligibility\BS_6224cda.pdf" />
+    <Content Include="getattachment\Donate\Blood-Donation\Donor-Eligibility\Coronavirus-COVID-19-%28Coronavirus%29-Notice-to-Blood-Donors-%28EDMS-Lite%29-%283%294cda.pdf" />
+    <Content Include="getattachment\Donate\Blood-Donation\Donor-Eligibility\Coronavirus-COVID-19-%28Coronavirus%29-Notice-to-Blood-Donors-Spanish-%28EDMS-Lite%29-%282%294cda.pdf" />
+    <Content Include="getattachment\Donate\Tools-Activities\Fast-Track-Health-History-Questionnaire\8-5x11_4c_FastTrackFAQ_FINAL4cda.pdf" />
+    <Content Include="getattachment\Donate\Tools-Activities\Fast-Track-Health-History-Questionnaire\BS_3514cda.pdf" />
+    <Content Include="getattachment\Donate\Tools-Activities\Fast-Track-Health-History-Questionnaire\BS_351M4cda.pdf" />
+    <Content Include="getattachment\Donate\Tools-Activities\Fast-Track-Health-History-Questionnaire\BS_6224cda.pdf" />
+    <Content Include="getattachment\Donate\Tools-Activities\Fast-Track-Health-History-Questionnaire\BS_8504cda.pdf" />
+    <Content Include="user\user.Master" />
+    <Content Include="admin\Admin_Master.Master" />
+    <Content Include="admin\main\assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="admin\main\assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="admin\main\assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="admin\main\assets\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="admin\main\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="admin\main\assets\fonts\ionicons790f.eot" />
+    <Content Include="admin\main\assets\fonts\ionicons790f.ttf" />
+    <Content Include="admin\main\assets\fonts\ionicons790f.woff" />
+    <Content Include="admin\main\assets\fonts\linea-basic-10.eot" />
+    <Content Include="admin\main\assets\fonts\linea-basic-10.ttf" />
+    <Content Include="admin\main\assets\fonts\linea-basic-10.woff" />
+    <Content Include="admin\main\assets\fonts\linea-basic-10d41d.eot" />
+    <Content Include="admin\main\assets\fonts\linea-weather-10.eot" />
+    <Content Include="admin\main\assets\fonts\linea-weather-10.ttf" />
+    <Content Include="admin\main\assets\fonts\linea-weather-10.woff" />
+    <Content Include="admin\main\assets\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="admin\main\assets\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="admin\main\assets\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="admin\main\assets\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="admin\main\assets\fonts\Simple-Line-Iconsb26c.eot" />
+    <Content Include="admin\main\assets\fonts\Simple-Line-Iconsb26c.ttf" />
+    <Content Include="admin\main\assets\fonts\Simple-Line-Iconsb26c.woff" />
+    <Content Include="admin\main\assets\fonts\Simple-Line-Iconsb26c.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\main\Page\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4049/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
