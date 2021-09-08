@@ -1,0 +1,10 @@
+Hi,
+
+This is a website based on Asp.net and C#. This website is developed by using template.
+To run this website, 
+  First you need to change the path of database connection variable in "Web.Config" File,
+   And After that go into "Blood Bank Management System\Blood Bank Management System\user" and run UserHome.aspx file to run this project.
+   
+   To run Admin Site you have to change url of browser to "admin/Admin_Login.aspx" and do not remove the localhost. 
+        Eg.   http://localhost:4049/admin/Admin_Login.aspx
+   Admin Id is "m@gmail.com" and Password is "M@123".
