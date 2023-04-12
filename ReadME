@@ -1,5 +1,17 @@
 Hi,
 
+The Blood Bank website is a powerful solution for blood donation management that provides an efficient and effective way for blood donors to register and for management to manage their inventory. 
+
+The core feature of the website is its ability to enable blood donors to register for donation. The website offers a user-friendly interface that simplifies the process of registration, making it easier for users to navigate through the different registration steps.
+
+In addition to donor registration, the website also offers a management interface that enables blood bank administrators to manage their inventory. The management interface allows administrators to track their inventory in real-time, receive alerts when the inventory reaches a critical level, and generate reports on inventory levels and usage.
+
+The website's integration with SQL Server provides a robust and scalable database solution that ensures that all data is securely stored and easily accessible. The website also offers advanced search options that enable users to find the nearest blood bank locations and schedule appointments for blood donation.
+
+The website's user interface is optimized for desktop and mobile devices, making it easy for users to access the website from any device. The website's design is clean, modern, and easy to navigate, providing users with a seamless and intuitive experience.
+
+Overall, the Blood Bank website is a powerful and efficient solution for blood donation management that provides a comprehensive set of features to meet the needs of both donors and management. Its integration with various tools and technologies, including Asp.Net, C#, HTML5, CSS, SQL Server, JavaScript, VS Code, and MS server management studio, ensures that the website is highly responsive and scalable. Its user-friendly interface, advanced search options, and robust inventory management make it an ideal solution for blood bank organizations.
+
 This is a website based on Asp.net and C#. This website is developed by using template.
 To run this website, 
   First you need to change the path of database connection variable in "Web.Config" File,
@@ -8,3 +20,4 @@ To run this website,
    To run Admin Site you have to change url of browser to "admin/Admin_Login.aspx" and do not remove the localhost. 
         Eg.   http://localhost:4049/admin/Admin_Login.aspx
    Admin Id is "m@gmail.com" and Password is "M@123".
+   
